@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Oblig 2 - MathML</title>
+		<link href="stiler/stilark.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="topnav">
+            <a href="index.html">Hjem</a>
+            <a class="aktiv" href="mathml.html">MathML</a>
+            <a href="svg.html">SVG</a>
+            <a href="github.html">GitHub</a>
+        </div>
+
+
+    		<div>
+
+    			<header>
+    				<h1 id="headersider">MathML</h1>
+    			</header>
+
+    			<main>
+    				<article class="sideartikkel">
+    					<h2>MathML - Hvorfor?</h2>
+    					<p>MathML er kort for Mathematical Markup Language. MathML blir brukt som en framstilling av
+                            matematisk formler på nettsider. Dette erfordi det er mye lettere enn å skrive en matematisk
+                            formel ved bruk av en "p"-tag eller å lage det i word for å så sette inn et bilde av det.
+                         	<br />
+                            Til høyre kan du se hvordan andregradsligningen er skrevet ut i HTML ved hjelp av MathML.
+						</p>
+                        <p>Et annet og enkelt eksempel er(a+b)^2. Dette blir kjapt mye finere
+						 	ved bruken av MathML. Dette kan du også se til høyre på siden.
+							<br />
+							Uheldigvis støtter ikke Google Chrome MathML, så du kan prøve å åpne siden i Firefox.
+                        </p>
+
+					</article>
+                    <div class="positionright">
+                        <h3>Andregradsligningen:</h3>
+						<math>
+							<mrow>
+                              <mi>x</mi>
+                              <mo>=</mo>
+                              <mfrac>
+                                <mrow>
+                                  <mrow>
+                                    <mo>-</mo>
+                                    <mi>b</mi>
+                                  </mrow>
+                                  <mo>&PlusMinus;</mo>
+                                  <msqrt>
+                                    <mrow>
+                                      <msup>
+                                        <mi>b</mi>
+                                        <mn>2</mn>
+                                      </msup>
+                                      <mo>-</mo>
+                                      <mrow>
+                                        <mn>4</mn>
+                                        <mo>&InvisibleTimes;</mo>
+                                        <mi>a</mi>
+                                        <mo>&InvisibleTimes;</mo>
+                                        <mi>c</mi>
+                                      </mrow>
+                                    </mrow>
+                                  </msqrt>
+                                </mrow>
+                                <mrow>
+                                  <mn>2</mn>
+                                  <mo>&InvisibleTimes;</mo>
+                                  <mi>a</mi>
+                                </mrow>
+                              </mfrac>
+                        	</mrow>
+						</math>
+
+                        <br />
+
+                        <h3>Dette blir (a+b)^2:</h3>
+						<math>
+							<mrow>
+	                           <msup>
+	                             <mfenced>
+	                               <mrow>
+	                                 <mi>a</mi>
+	                                 <mo>+</mo>
+	                                 <mi>b</mi>
+	                               </mrow>
+	                             </mfenced>
+	                             <mn>2</mn>
+	                           </msup>
+	                       </mrow>
+				   		</math>
+				   </div>
+    			</main>
+
+    			<footer>
+                    <h3>Obligatorisk oppgave 2 - Webutvikling</h3>
+    				<p> Nettsiden er laget av Filip Austad</p>
+                    <a href="omsiden.html">Om denne siden</a>
+    			</footer>
+    		</div>
+	</body>
+</html>

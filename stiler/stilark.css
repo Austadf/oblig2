@@ -1,0 +1,186 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+/*box sizing fix*/
+body * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizinng: border-box;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header, main, footer, nav, article, aside, div {
+    display: block;
+    overflow: hidden;
+}
+
+/*--------------------------------------------------------------*/
+/* navigasjon*/
+.topnav {
+    background-color: #333;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13pt;
+    -o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.topnav a:hover {
+    color: black;
+    background-color: white;
+}
+
+.topnav a.aktiv {
+    color: white;
+    background-color: #588191;
+}
+
+.parallax {
+    background-image: url(../bilder/bakgrunn.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    position: relative;
+}
+/*--------------------------------------------------------------*/
+/*header*/
+#headerindex {
+    text-align: center;
+    color: #CFD1D2;
+    width: 25%;
+    background: #333;
+    padding-top: 9px;
+    height: 60px;
+    top: 40%;
+    left: 50%;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+#headersider {
+    text-align: center;
+    color: #CFD1D2;
+    width: 25%;
+    background: #333;
+    padding-top: 9px;
+    height: 60px;
+    top: 20%;
+    left: 50%;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+/*--------------------------------------------------------------*/
+
+#indexartikkel {            /*for artikkelen på nettsidens index*/
+    width: 37%;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 700px;
+    float: left;
+    padding-left: 5px;
+}
+
+.sideartikkel {             /*for artikkelen til venstre på nettsiden*/
+    width: 36%;
+    height: 555px;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+.positionright {            /*posisjonen til det som ligger til høyre på nettsiden*/
+    width: 35%;
+    height: 525px;
+    position: absolute;
+    right: 10%;
+    top: 32%;
+}
+
+#bilde-mal {            /*posisjonen til bilder til "omsiden"*/
+    float: left;
+    width: 250px;
+    border-radius: 8px;
+}
+#bilde-mal2 {           /*posisjonen til bilder til "omsiden"*/
+    float: right;
+    width: 250px;
+    border-radius: 8px;
+}
+#bilde-kode {           /*posisjonen til bilde i index*/
+    float: right;
+    margin-right: 50px;
+    margin-top: 80px;
+    width: 800px;
+    border-radius: 5px;
+}
+/*--------------------------------------------------------------*/
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table a {
+    color: black;
+}
+/*farger for tabellen*/
+#tabellfarge tr:nth-child(even) {
+    background-color: rgba(153, 183, 203, 0.5);
+}
+#tabellfarge tr:nth-child(odd) {
+    background-color: rgba(107, 129, 143, 0.5);
+}
+/*--------------------------------------------------------------*/
+footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 130px;
+    background-color: #475F68;
+    position: absolute;
+    bottom: 0;
+}
+
+#indexfooter {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 170px;
+    background-color: #475F68;
+    position: sticky;
+}
+
+footer a {
+    color: #EE6052;
+    font-size: 15pt;
+}
+
+#ikon-pil {             */posisjonen til pilen i footer på index*/
+    position: absolute;
+    bottom: 35%;
+    left: 75%;
+}
